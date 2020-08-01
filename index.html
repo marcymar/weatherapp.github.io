@@ -13,42 +13,102 @@
 <nav class="navbar navbar-light bg-light">
     <span class="navbar-brand mb-0 h1">What's the Weather Like Here?</span>
 </nav>
-<!-- container for row 1 -->
+<!-- container-->
 <div id="searchBar" class="container">
     <!-- search button and input -->
     <div class="btn-toolbar mb-3 row" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="col-sm-4">
+        <div class="col-4">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <div class="input-group-text" id="btnGroupAddon"></div>
+                        <button type="button" class="btn btn-secondary">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            </svg>
+                        </button>
                 </div>
                 <input type="text" class="form-control" placeholder="enter city name" aria-label="enter city name"
                     aria-describedby="btnGroupAddon">
             </div>
             <div class="btn-group mr-2" role="group" aria-label="First group">
-                <button type="button" class="btn btn-secondary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                    <path fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                </svg></button>
+            </div>
+            <!-- Previous Cities Searched -->
+            <div id="searchHistory">
+                <div class="card col-sm" style="width: 18rem;">
+                    <div class="card-header">
+                        Previous Searches
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">City</li>
+                        <li class="list-group-item">City</li>
+                        <li class="list-group-item">City</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- this is gon be the weather info -->
+        <div class="jumbotron col-8">
+            <h1 class="display-4">City Name</h1>
+            <p class="lead">Date and Time, also the icon</p>
+            <hr class="my-4">
+            <p>
+            <ul>Temperature</ul>
+            <ul>Humidity</ul>
+            <ul>Wind Speed</ul>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <h3>5 Day Forecast:</h3>
+        <br>
+    <div class="row">
+            <div id="weekday">
+                <div class="card col-sm" style="width: 14rem;">
+                    <div class="card-header">
+                        Day 1
+                    </div>
+                    <p>Weather</p>
+                </div>
+            </div>
+                        <div id="weekday">
+                <div class="card col-sm" style="width: 14rem;">
+                    <div class="card-header">
+                        Day 2
+                    </div>
+                    <p>Weather</p>
+                </div>
+            </div>
+            <div id="weekday">
+                <div class="card col-sm" style="width: 14rem;">
+                    <div class="card-header">
+                        Day 3
+                    </div>
+                    <p>Weather</p>
+                </div>
+            </div>
+            <div id="weekday">
+                <div class="card col-sm" style="width: 14rem;">
+                    <div class="card-header">
+                        Day 4
+                    </div>
+                    <p>Weather</p>
+                </div>
+            </div>
+            <div id="weekday">
+                <div class="card col-sm" style="width: 14rem;">
+                    <div class="card-header">
+                        Day 5
+                    </div>
+                    <p>Weather</p>
+                </div>
             </div>
         </div>
     </div>
-        <!-- Previous Cities Searched -->
-        <div id="searchHistory">
-            <div class="card col-sm-4" style="width: 18rem;">
-                <div class="card-header">
-                    Previous Searches
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">City</li>
-                    <li class="list-group-item">City</li>
-                    <li class="list-group-item">City</li>
-                </ul>
-            </div>
-        </div>
 </div>
 
 
