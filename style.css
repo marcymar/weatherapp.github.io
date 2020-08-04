@@ -1,3 +1,16 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.card-header {
+    background-color: rgba(0, 139, 139, 0.521);
+}
+
+.jumbotron { 
+    background-color: rgba(0, 139, 139, 0.521);
+}

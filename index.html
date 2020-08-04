@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>What's the Weather like?</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <div class="col-4">
             <div class="input-group">
                 <div class="input-group-prepend">
-                        <button type="button" class="btn btn-secondary">
+                        <button id="search" type="button" class="btn btn-secondary">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -30,7 +31,7 @@
                             </svg>
                         </button>
                 </div>
-                <input type="text" class="form-control" placeholder="enter city name" aria-label="enter city name"
+                <input id ="city" for="city" type="text" class="form-control" placeholder="enter city name" aria-label="enter city name"
                     aria-describedby="btnGroupAddon">
             </div>
             <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -51,14 +52,10 @@
         </div>
         <!-- this is gon be the weather info -->
         <div class="jumbotron col-8">
-            <h1 class="display-4">City Name</h1>
+            <!-- <h1 for ="city" id="city" class="display-4 city">City Name</h1> -->
             <p class="lead">Date and Time, also the icon</p>
             <hr class="my-4">
-            <p>
-            <ul>Temperature</ul>
-            <ul>Humidity</ul>
-            <ul>Wind Speed</ul>
-            </p>
+            <p id="weather">City:</p>
         </div>
     </div>
 </div>
