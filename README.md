@@ -11,5 +11,5 @@ I have files for a set of icons included, but in the end only their codes would 
 
 In the end I am proud of what I was able to accomplish, especially since I'm still trying to grasp JavaScript. 
 
-Here's a [link] to the app and a screenshot of it as well:
+Here's a [link]( https://marcymar.github.io/weatherapp.github.io/) to the app and a screenshot of it as well:
 ![](appimage/weatherapp.png)
