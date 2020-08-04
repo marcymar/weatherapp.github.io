@@ -13,3 +13,7 @@ In the end I am proud of what I was able to accomplish, especially since I'm sti
 
 Here's a [link]( https://marcymar.github.io/weatherapp.github.io/) to the app and a screenshot of it as well:
 ![](appimage/weatherapp.png)
+
+
+ps: I guess temperatures are just going to be in kelvin now. Here's the formula to convert it to Fahrenheit:
+K * 1.8 - 459.67
